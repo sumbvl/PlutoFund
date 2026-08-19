@@ -16,10 +16,10 @@ function NavBar () {
             <Link to="/" className='group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-sky-100 group-hover:to-cyan-300 inline-block group-hover:-translate-y-0.5'>Home</Link>
             </div>
             <div className='group'>
-            <Link to="/features" className='group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-sky-100 group-hover:to-cyan-300 inline-block group-hover:-translate-y-0.5'>Features</Link>
+            <Link to="/account" className='group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-sky-100 group-hover:to-cyan-300 inline-block group-hover:-translate-y-0.5'>Account</Link>
             </div>
             <div className='group'>
-            <Link to="/products" className='group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-sky-100 group-hover:to-cyan-300 inline-block group-hover:-translate-y-0.5'>Projects</Link>
+            <Link to="/projects" className='group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-sky-100 group-hover:to-cyan-300 inline-block group-hover:-translate-y-0.5'>Projects</Link>
             </div>
             <div className='group'>
             <Link to="/login" className='group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-sky-100 group-hover:to-cyan-300 inline-block group-hover:-translate-y-0.5'>Login</Link>
