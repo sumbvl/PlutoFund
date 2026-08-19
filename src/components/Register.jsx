@@ -9,7 +9,8 @@ function Register() {
     const navigate = useNavigate();
 
     function handleRegister(e) { 
-    if(password!==confirm) {
+      e.preventDefault()
+      if(password!==confirm) {
         alert("Passwords do not match.");
         return;
     }
@@ -41,16 +42,16 @@ function Register() {
           <div className="flex flex-col">
             <label className="text-sm mb-1 pl-3">Password</label>
             <input
-              type="password"
+              type="password" value={password} onChange={(e) => setPassword(e.target.value)}
               className="focus:outline-none focus:border-cyan-300 focus:ring-2 focus:ring-cyan-400/40 shadow-md shadow-cyan-500/10 transition rounded-[30px] py-2 px-4 bg-slate-900/80 border border-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-cyan-300" />
           </div>
           <div className="flex flex-col">
             <label className="text-sm mb-1 pl-3">Confirm Password</label>
             <input
-              type="password"
+              type="password" value={confirm} onChange={(e) => setConfirm(e.target.value)}
               className="focus:outline-none focus:border-cyan-300 focus:ring-2 focus:ring-cyan-400/40 shadow-md shadow-cyan-500/10 transition rounded-[30px] py-2 px-4 bg-slate-900/80 border border-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-cyan-300" />
           </div>
-          <div className="flex justify-center pt-2 text-cyan-950 mt-2">
+          <div className="flex justify-center pt-1 text-cyan-950 mt-2">
             <button type="submit" className="text-cyan-900 px-20 rounded-[30px] py-2.5 bg-gradient-to-r from-sky-200 to-cyan-300 font-semibold hover:opacity-90 transition">
               Create Account
             </button>
