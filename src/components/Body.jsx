@@ -3,34 +3,36 @@ import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Body() {
   return (
-    <div className="font-montserrat">
-      <div className="flex flex-row justify-between gap-1 mt-7">
-        <div className="mt-35 ml-16">
-          <button className="whitespace-nowrap mr-12 hover:cursor-pointer rounded-[20px] bg-linear-to-r from-sky-300 to-cyan-100 py-3 px-10 text-cyan-950 font-semibold opacity-90">
-            Get Started
-          </button>
-          <h1 className="text-white pt-5 font-bold text-[62px] text-balance">
-            Borderless Money for a{" "}
+    <div className="font-montserrat hover:cursor-default">
+      <div className="grid grid-cols-2 mt-7">
+        <div className="mt-25 ml-16">
+          <div className="group">
+            <Link to='register' className="whitespace-nowrap mr-12 hover:cursor-pointer rounded-[20px] bg-linear-to-r from-sky-300 to-cyan-100 py-3.5 px-10 text-cyan-950 font-semibold opacity-90 group-hover:scale-102 group-hover:shadow-xl">
+              Get Started
+            </Link>
+          </div>
+          <h1 className="text-white pt-8 font-bold text-[62px] text-balance">
+            Borderless Money for a
             <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-100 to-sky-300">
               Connected
-            </span>{" "}
+            </span>
             World.
           </h1>
-          <p className="text-cyan-100 pt-4 text-balance pr-8">
+          <p className="text-cyan-100 pt-4 text-balance">
             Send, spend, and hold over 40 currencies at real interbank exchange
             rates. Built with institutional-grade encryption for global citizens
             and teams.
           </p>
         </div>
-        <div className="mt-6 ml-8">
-          <img src="src/assets/robot.png" alt=":D" />
+        <div className="mt-6">
+          <img src="src/assets/robot7.png" alt=":D" />
         </div>
       </div>
       <div className="flex flex-row justify-between mt-20">
         <div className="flex items-align">
           <h1 className="text-white font-bold text-[45px] flex items-center justify-center mx-15">
             180+
-            <span className="text-sm font-normal px-4 bg-clip-text text-transparent bg-linear-to-r from-cyan-100 to-sky-200">
+            <span className="text-sm font-normal px-4 bg-clip-text text-transparent bg-linear-to-r from-sky-100 to-cyan-300">
               COUNTRIES SUPPORTED
             </span>
           </h1>
@@ -38,7 +40,7 @@ function Body() {
         <div className="flex items-align">
           <h1 className="text-white font-bold text-[44px] flex items-center justify-center mx-15">
             $1.2B+
-            <span className="text-sm font-normal px-4 bg-clip-text text-transparent bg-linear-to-r from-cyan-100 to-sky-200">
+            <span className="text-sm font-normal px-4 bg-clip-text text-transparent bg-linear-to-r from-sky-100 to-cyan-300">
               TOTAL VOLUME
             </span>
           </h1>
@@ -46,7 +48,7 @@ function Body() {
         <div className="flex items-align">
           <h1 className="text-white font-bold text-[44px] flex items-center justify-center mx-15">
             4.9★
-            <span className="text-sm font-normal px-4 bg-clip-text text-transparent bg-linear-to-r from-cyan-100 to-sky-200">
+            <span className="text-sm font-normal px-4 bg-clip-text text-transparent bg-linear-to-r from-sky-100 to-cyan-300">
               APP STORE RATING
             </span>
           </h1>
@@ -54,7 +56,7 @@ function Body() {
       </div>
       <div className="mt-35 mb-16 mx-2 grid grid-cols-2">
         <div className="text-balance">
-          <h1 className="text-white font-bold text-[44px] flex items-center justify-center ml-20">
+          <h1 className="text-white font-bold text-[44px] flex items-center justify-center ml-20 pt-2">
             You build the vision, we'll power the capital.
           </h1>
           <p className="text-white py-9 ml-20 text-balance">
@@ -62,16 +64,15 @@ function Body() {
             Manage treasury, automate corporate payouts, and earn high-yield
             returns—all from a single, intuitive dashboard.
           </p>
-          <button className="hover:cursor-pointer rounded-[10px] bg-linear-to-r from-cyan-100 to-sky-300 py-3 px-10 ml-20 text-cyan-950 font-semibold">
+          <button className="hover:cursor-pointer rounded-[10px] bg-linear-to-r from-cyan-100 to-sky-300 py-3 px-10 ml-20 text-cyan-950 font-semibold hover:scale-102">
             Join Now
           </button>
         </div>
-
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4 ml-20">
           <div className="group">
-            <div className="flex flex-row group-hover:bg-linear-to-r from-slate-950/70 to-cyan-900/70 group-hover:rounded-xl">
-              <div className="w-9 h-9 flex items-center justify-center m-7 ml-20">
-                <img src="src/assets/Star.svg" />
+            <div className="flex flex-row items-center gap-4 pl-4 pr-1 mr-12 py-5 rounded-xl transition-colors duration-300 group-hover:bg-linear-to-r group-hover:from-slate-950/70 group-hover:to-cyan-900/70">
+              <div className="w-12 h-12 flex items-center justify-center shrink-0 rounded-full bg-cyan-400/15">
+                <img src="src/assets/Star.svg" className="w-5 h-5" />
               </div>
               <ul>
                 <li className="text-white font-bold text-[18px] flex items-center">
@@ -85,38 +86,37 @@ function Body() {
             </div>
           </div>
           <div className="group">
-          <div className="flex flex-row group-hover:bg-linear-to-r from-slate-950/70 to-cyan-900/70 group-hover:rounded-xl">
-            <div className="w-9 h-9 flex items-center justify-center m-7 ml-20">
-              <button className="">
-                <img src="src/assets/Shield.svg" />
-              </button>
+            <div className="flex flex-row items-center gap-4 pl-4 pr-1 mr-12 py-5 rounded-xl transition-colors duration-300 group-hover:bg-linear-to-r group-hover:from-slate-950/70 group-hover:to-cyan-900/70">
+              <div className="w-12 h-12 flex items-center justify-center shrink-0 rounded-full bg-cyan-400/15">
+                <img src="src/assets/Shield.svg" className="w-5 h-5" />
+              </div>
+              <ul>
+                <li className="text-white pb-2 font-bold text-[18px] flex items-center">
+                  Institutional-Grade Security
+                </li>
+                <p className="text-white text-balance pb-2">
+                  Multi-factor authentication, customizable authorization tiers,
+                  and 256-bit data encryption protect every dollar.
+                </p>
+              </ul>
             </div>
-            <ul>
-              <li className="text-white pb-2 font-bold text-[18px] flex items-center">
-                Institutional-Grade Security
-              </li>
-              <p className="text-white text-balance pb-2">
-                Multi-factor authentication, customizable authorization tiers,
-                and 256-bit data encryption protect every dollar.
-              </p>
-            </ul>
           </div>
-          </div>
+
           <div className="group">
-          <div className="flex flex-row group-hover:bg-linear-to-r from-slate-950/70 to-cyan-900/70 group-hover:rounded-xl">
-            <div className="w-9 h-9 flex items-center justify-center m-7 ml-20">
-              <img src="src/assets/Send.svg" />
+            <div className="flex flex-row items-center gap-4 pl-4 pr-1 mr-12 py-5 rounded-xl transition-colors duration-300 group-hover:bg-linear-to-r group-hover:from-slate-950/70 group-hover:to-cyan-900/70">
+              <div className="w-12 h-12 flex items-center justify-center shrink-0 rounded-full bg-cyan-400/15">
+                <img src="src/assets/Send.svg" className="w-5 h-5" />
+              </div>
+              <ul>
+                <li className="text-white pb-2 font-bold text-[18px] flex items-center">
+                  Instant Global Transfers
+                </li>
+                <p className="text-white text-balance">
+                  Move funds across 180+ countries with sub-second settlements
+                  and zero hidden exchange markup.
+                </p>
+              </ul>
             </div>
-            <ul>
-              <li className="text-white pb-2 font-bold text-[18px] flex items-center">
-                Instant Global Transfers
-              </li>
-              <p className="text-white text-balance">
-                Move funds across 180+ countries with sub-second settlements and
-                zero hidden exchange markup.
-              </p>
-            </ul>
-          </div>
           </div>
         </div>
         <div className="pl-25 py-25">
@@ -139,7 +139,7 @@ function Body() {
             <img src="src/assets/google.svg" className="w-30 h-24 opacity-80" />
           </div>
         </div>
-        <div className="mt-20 mr-15">
+        <div className="mt-20">
           <h1 className="text-white font-bold text-[38px] flex items-center justify-center ml-25">
             Easily control your billing & invoicing.
           </h1>
@@ -148,7 +148,7 @@ function Body() {
             incoming settlements in one clean timeline. Track cash flow
             real-time and automate payments with zero stress.
           </p>
-          <button className="hover:cursor-pointer rounded-[10px] bg-linear-to-r from-cyan-100 to-sky-300 py-3 px-10 ml-25 text-cyan-950 font-semibold">
+          <button className="hover:cursor-pointer rounded-[10px] bg-linear-to-r from-cyan-100 to-sky-300 py-3 pl-10 ml-25 text-cyan-950 font-semibold hover:scale-102">
             Let's Go
           </button>
         </div>
@@ -205,7 +205,6 @@ function Body() {
             </div>
           </div>
         </div>
-
         <div className="flex-1 flex flex-col p-6 bg-linear-to-r from-sky-300/40 rounded-xl">
           <img src="src/assets/quotes.svg" className="w-8 h-8 mx-6 mt-3" />
           <p className="text-white pt-6 flex-1 px-6">
@@ -223,66 +222,97 @@ function Body() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between mt-20 mx-25 py-6 gap-30 items-center bg-linear-to-r from-sky-800/50 to-sky-300/50 rounded-[20px]">
-        <div className="pt-6">
-          <h1 className="text-white mr-12 font-bold text-[38px] flex items-center justify-center">
+      <div className="flex flex-row justify-between mt-30 mx-25 py-10 px-12 items-center bg-linear-to-r from-sky-800/50 to-sky-300/50 rounded-[20px]">
+        <div>
+          <h1 className="text-white font-bold text-[38px]">
             Let's try our service now!
           </h1>
-          <p className="text-white px-22 py-4 mr-30 text-balance">
+          <p className="text-white pt-3 max-w-xl">
             Everything you need to accept global payouts, optimize cash flow,
+            <br />
             and scale your business effortlessly.
           </p>
         </div>
-        <button className="whitespace-nowrap mr-12 hover:cursor-pointer rounded-[10px] bg-linear-to-r from-cyan-100 to-sky-300 py-3 px-15 text-cyan-950 font-semibold">
+        <button className="whitespace-nowrap hover:cursor-pointer rounded-[10px] bg-linear-to-r from-cyan-100 to-sky-300 py-3 px-10 text-cyan-950 font-semibold hover:scale-105 transition-transform">
           Explore Now
         </button>
       </div>
-      <div className="flex flex-row justify-between text-white mt-30 mx-15 pb-10 items-start">
+      <div className="flex flex-row justify-between text-white mt-25 mx-15 pb-10 items-start mr-22">
         <div className="py-10">
-          <Link className="py-5 px-6">
+          <Link className="py-5 pr-6 inline-block hover:scale-102">
             <div className="flex flex-row justify-between items-center">
-              <img
-                src="src/assets/logo.png"
-                className="w-7 h-7 mr-3 rounded-full"
-              />
+              <img src="src/assets/logo.png" className="w-8 h-8 mr-3" />
               <span className="tracking-[5px] font-semibold text-lg">
-                 PLUTO<span className='bg-clip-text text-transparent bg-linear-to-r from-cyan-100 to-sky-300'>FUNDS</span>
+                PLUTO
+                <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-100 to-sky-300">
+                  FUNDS
+                </span>
               </span>
             </div>
           </Link>
-          <p className="text-wrap text-sm max-w-50 opacity-80">
+          <p className="text-wrap text-sm max-w-60 opacity-80 pl-7">
             A smarter way to grow, manage, and move your money globally. Safe,
             intelligent, and seamless.
           </p>
         </div>
         <div className="py-6">
           <h1 className="font-semibold text-md pb-6">Platform</h1>
-          <ul className="text-md opacity-80">
-            <li className="pb-3">Overview</li>
-            <li className="pb-3">How It Works</li>
-            <li className="pb-3">Smart Cards</li>
-            <li className="pb-3">Treasury</li>
-            <li className="pb-3">Security & Compliance</li>
+          <ul className="text-md">
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Overview
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              How It Works
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Smart Cards
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Treasury
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Security & Compliance
+            </li>
           </ul>
         </div>
         <div className="py-6">
           <h1 className="font-semibold text-md pb-6">Resources</h1>
-          <ul className="text-md opacity-80">
-            <li className="pb-3">Help Center</li>
-            <li className="pb-3">API Docs</li>
-            <li className="pb-3">Community Forum</li>
-            <li className="pb-3">Blog</li>
-            <li className="pb-3">Product Updates</li>
+          <ul className="text-md">
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Help Center
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              API Docs
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Community Forum
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Blog
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Product Updates
+            </li>
           </ul>
         </div>
         <div className="py-6">
           <h1 className="font-semibold text-md pb-6">Company</h1>
-          <ul className="text-md opacity-80">
-            <li className="pb-3">About Us</li>
-            <li className="pb-3">Careers</li>
-            <li className="pb-3">Become a Partner</li>
-            <li className="pb-3">Privacy Policy</li>
-            <li className="pb-3">Terms of Service</li>
+          <ul className="text-md">
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              About Us
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Careers
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Become a Partner
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Privacy Policy
+            </li>
+            <li className="pb-3 opacity-80 hover:opacity-100 hover:text-white cursor-pointer transition">
+              Terms of Service
+            </li>
           </ul>
         </div>
       </div>
