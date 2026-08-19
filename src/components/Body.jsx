@@ -28,7 +28,7 @@ function Body() {
           <img src="src/assets/robot7.png" alt=":D" />
         </div>
       </div>
-      <div className="flex flex-row justify-between mt-20">
+      <div className="flex flex-row justify-between mt-25">
         <div className="flex items-align">
           <h1 className="text-white font-bold text-[45px] flex items-center justify-center mx-15">
             180+
@@ -148,7 +148,7 @@ function Body() {
             incoming settlements in one clean timeline. Track cash flow
             real-time and automate payments with zero stress.
           </p>
-          <button className="hover:cursor-pointer rounded-[10px] bg-linear-to-r from-cyan-100 to-sky-300 py-3 pl-10 ml-25 text-cyan-950 font-semibold hover:scale-102">
+          <button className="hover:cursor-pointer rounded-[10px] bg-linear-to-r from-cyan-100 to-sky-300 py-3 px-10 pl-10 ml-25 text-cyan-950 font-semibold hover:scale-102">
             Let's Go
           </button>
         </div>
