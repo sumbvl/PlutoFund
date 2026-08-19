@@ -1,4 +1,3 @@
-https://github.com/user-attachments/assets/09a10af3-eb81-4cd9-a274-12bbc94e57d0
 
 ## PlutoFunds
 
