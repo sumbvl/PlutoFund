@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/09a10af3-eb81-4cd9-a274-12bbc94e57d0
+
 ## PlutoFunds
 
 A fintech landing page built with React, Tailwind CSS, and React Router. Showcases payment products with a hero section, stats, features, testimonials, and a mock login/register flow.
