@@ -13,7 +13,7 @@ function Body() {
           </div>
           <h1 className="text-white pt-8 font-bold text-[62px] text-balance">
             Borderless Money for a
-            <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-100 to-sky-300">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-100 to-sky-300 px-2 pr-3">
               Connected
             </span>
             World.
