@@ -3,6 +3,8 @@ import NavBar from './components/NavBar';
 import Body from './components/Body';
 import Login from './components/Login';
 import Register from './components/Register';
+import Account from './components/Account';
+import CurrencyConverter from './components/CurrencyConverter';
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
         <Route path="/" element={<Body />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/projects" element={<CurrencyConverter />} />
       </Routes>
     </div>
   );
