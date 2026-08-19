@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const users = [
     {email: "sushi@gmail.com", password: "2512"}, {email: "nurpur@gmail.com", password: "1505"},
-    {email: "hahim@gmail.com", password: "2509"}
+    {email: "hahim@gmail.com", password: "2509"}, {email: "sumi@gmail.com", password: "2512"}
 ];
 
 function Login() {
@@ -15,12 +15,10 @@ function Login() {
 
     function handleLogin (e) {
         e.preventDefault();
-        const match = (
-            (s) => {
-                s.email === email;
-                s.password === password;
-            }
-        )
+        const match = users.find(
+            (s) => s.email === email && s.password === password
+        );
+
         if(match) {
             navigate("/account");
         } else {
@@ -41,15 +39,16 @@ function Login() {
           <div className="flex flex-col">
             <label className="text-sm mb-1 pl-3">Username/Email</label>
             <input
-              type="text"
+              type="email" value={email} onChange={(e) => setEmail(e.target.value)}
               className="focus:outline-none focus:border-cyan-300 focus:ring-2 focus:ring-cyan-400/40 shadow-md shadow-cyan-500/10 transition rounded-[30px] py-2 px-4 bg-slate-900/80 border border-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-cyan-300" />
           </div>
           <div className="flex flex-col">
             <label className="text-sm mb-1 pl-3">Password</label>
             <input
-              type="password"
+              type="password" value={password} onChange={(e) => setPassword(e.target.value)}
               className="focus:outline-none focus:border-cyan-300 focus:ring-2 focus:ring-cyan-400/40 shadow-md shadow-cyan-500/10 transition rounded-[30px] py-2 px-4 bg-slate-900/80 border border-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-cyan-300" />
           </div>
+          {error && <p className="text-red-400 text-sm text-center">{error}</p>}
           <div className="flex justify-center pt-4 text-cyan-950 my-4">
             <button type="submit" className="text-cyan-900 px-20 rounded-[30px] py-2.5 bg-gradient-to-r from-sky-200 to-cyan-300 font-semibold hover:opacity-90 transition">
               Login
